@@ -1,22 +1,37 @@
 ---
-const pageTitle = "Marlon Rodriguez"
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const pageTitle = "Marlon Rodriguez";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Header />
     <h1>{pageTitle}</h1>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="/blog/">Blog</a>
-		<h1>Melani Marquez</h1>
-    <h2>Eres el amor de mi vida...</h2>
-    <p>No se que haria sin ti mi amor</p>
-	</body>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ducimus
+      repellendus asperiores minima, at atque cumque nihil dolor maxime
+      exercitationem consequatur quidem aut deserunt optio eligendi quo quod,
+      explicabo sunt!
+    </p>
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tenetur
+      velit optio nam ipsa ipsam accusamus eveniet enim dolorum! Similique saepe
+      reiciendis rerum aliquam quibusdam corrupti facere quis dolor ratione.
+    </p>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+  </body>
 </html>
